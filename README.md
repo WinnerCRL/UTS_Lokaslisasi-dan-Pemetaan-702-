@@ -6,9 +6,21 @@ Winner Christian R. L. (4222201002)
 Proyek ini dibuat untuk ujian tengah semester, tujuannya adalah bergerak ke titik A, menyalakan buzzer satu kali, kemudian pergi ke titik B dan menyalakan buzzer dua kali.
 
 # cara kerja
-## Create Folder Workspace
+## Buat Folder Workspace
 ```bash
 mkdir -p Winner/src
 cd Winner/src
 
+## Instal package dan dependencies
+```bash
+cd ../ && rosdep install --from-paths src --ignore-src -r -y
 
+## Build Package
+```bash
+colcon build
+
+## sambungkan pc dan turtlebot (Via Ethernet)
+```bash
+ssh ubuntu@192.168.185.3
+
+## Melak
